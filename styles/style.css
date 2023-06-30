@@ -1,0 +1,707 @@
+*{  
+    text-decoration: none;
+    list-style: none;
+}
+
+*:focus{
+    outline: none;
+}
+/* police */
+@font-face{
+    font-family: "h1";
+    src: url(/fonts/PantheraRegular-MVZ9J.ttf);
+}
+h1{
+    font: 68px "h1";
+    color: #9E91B7;
+}
+@font-face{
+    font-family: "h2";
+    src: url(/fonts/FontsFree-Net-BEYNO.ttf);
+}
+h2{
+    font: 32px "h2";
+    color: #9E91B7;
+}
+.barre2 a{
+    font: 24px "h2";
+    color: #9E91B7;
+}
+@font-face{
+    font-family: "h3";
+    src: url(/fonts/FontsFree-Net-BEYNO.ttf);
+}
+h3{
+    font: 28px "h2";
+    color: #9E91B7;
+}
+@font-face{
+    font-family: "p" ;
+    src: url(/fonts/Cantarell-Regular.ttf);
+}
+
+p,  .page a{
+    font: 16px "p";
+    color: #FFFF;
+}
+.politique a{
+    font: 10px "p";
+    color: #FFFF;
+}
+.pltq{
+    color: #FFFF;
+}
+.formulaire p{
+    font: 24px "p" ;
+}
+.centre1 button{
+    font: 14px "p";
+}
+
+.formulaire h4{
+    font: 32px "p";
+}
+.cebtre0{
+    font: 30px "p";
+}
+.propos h4, .rs h4{
+    font: 18px "p";
+    letter-spacing: 6px;
+}
+@media screen and (max-width: 900px) {
+    .réseaux img{
+        width: 15px;
+    }
+    .barre2 a{
+        font-size: 16px;
+    }  
+    .barre1 img{
+        height: 20px;
+    }
+    .black1 h1{
+        font-size: 36px;
+    }
+    .black1 h2{
+        font-size: 28px;
+    }
+    p, .page a, ul{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 18px ;
+    }
+    .politique a{
+        font-size: 8px;
+        
+    }
+    .formulaire p{
+        font-size: 18px;
+    }
+    .formulaire h4{
+        font-size: 16px;
+    }
+    .centre1 button{
+        font: 12px "p";
+    }
+    
+    .formulaire h4{
+        font-size: 20px;
+    }
+    .centre0{
+        font-size: 26px;
+    }
+    .propos h4, .rs h4{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    h3{
+        font-size: 16px;
+    }
+}
+/* no scroll */
+
+/* barre de navigation */
+.coté{
+    position: absolute;   
+}
+.coté1{
+    background-color: #FFFF;
+    height: 550px;
+    width: 3px;
+    position: fixed;
+    margin-left: 1%;
+    top: 0;
+}
+.coté2{
+    position: fixed;
+    top: 0;
+}
+.coté3{
+    background-color: #FFFF;
+    height: 450px;
+    width: 3px;
+    margin-left: 150%;
+}
+@media screen and (max-width:900px) {
+    .coté1{
+        height: 270px;
+        width: 1px;
+    }    
+    .coté3{
+        height: 200px;
+        width: 1px;
+}   
+}
+@media screen and (max-width:500px) {
+    .coté1{
+        height: 270px;
+        width: 1px;
+    }    
+    .coté3{
+        margin-left: 140%;
+    }
+    .réseaux img{
+        width: 8px;
+    }   
+}
+
+.réseaux img{
+    margin-left: 110%;
+}
+.réseaux img:hover{
+    filter: brightness(0) invert(1);
+}
+
+.barre{
+   display: flex;
+   justify-content: space-between;
+   padding: 5% 5% 0 5%; 
+}
+.barre1 img:hover{
+    filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(500%) constrat(1);
+}
+.barre2 {
+    display: flex;
+    margin-right: 3%;
+}
+.barre2 a{
+    padding: 0% 3%;
+    color: #FFFF;
+}
+.barre2 a:hover{
+    text-decoration: underline;
+    color: #9E91B7;
+    
+}
+@media screen and (max-width:650px)  {
+    .barre{
+        padding: 5% 6% 0 6%; 
+     }
+     .barre1 img{
+        height: 18px;
+    }
+    .barre2 a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:450px)  {
+    .barre{
+        padding: 5% 2% 0 2%; 
+     }
+     .barre1 img{
+        height: 15px;
+    }
+    .barre2 a{
+        font-size: 10px;
+    }
+}
+/* body */
+body{
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-image: url("../images/Illustrations + Logo/All pages/arrière_plan.png");
+    overflow-x: hidden;
+    animation: fade-in 1s;
+}  
+@keyframes fade-in{
+    from{
+        transform: translateX(-10%);
+    }
+    to{
+        transform:translateX(0) ;
+    }
+}
+
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* premiere section */
+.black{
+    text-align: justify;
+    margin-left: 8%;
+    background-image: url("../images/Illustrations + Logo/Accueil/Pantherhome1..png");
+    background-size: 70%;
+    background-position: 140%;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 9%;
+    justify-content: center;
+}
+.intro{
+    color: white;
+    width: 50%;
+}
+/* 2eme section */
+.kill1 a, .kill2 a{
+    color: white;
+}
+.kill1, .kill2{
+    padding:2%;
+}
+
+
+.acteur1{
+    display: flex;
+    margin-left: 8%;
+    background-color: #021740;
+    padding-left: 2%;
+    height: 260px;
+    text-align: justify;
+    width: 91%;
+}
+.acteur1 img{
+    height: 260px;
+    width: 160px;
+}
+.display1, .display2{
+    display: flex;
+}
+@media screen and (max-width: 1000px) {
+    .acteur1{
+        display: block;
+        padding-left: 0;
+        height: 100%;   
+    }
+    .display2, .panther3{
+        background-color: #021740;
+        margin: 1%;
+    }
+    .kill1, .kill2{
+        padding: 2%;
+    }
+}
+@media screen and (max-width:   1300px){
+    .kill1 p, .kill2 p{
+        font-size: 12px;
+    }
+}
+/* 3eme section */
+.contenaire{
+    display: flex;
+    margin: 15% 8% 8% 11%;
+}
+.contenaire p{
+    color: white;
+}
+/* 3ème section */
+.colonne1{
+    text-align: justify;
+    width: 65%;
+}
+.colonne2{
+    width: 35%;
+    margin-top: 15%;
+    justify-content: center;
+}
+/* black panther */
+.tchalla{
+    background-color: #FFFF;
+    border-radius: 20px;
+    min-height: 350px;
+    width: 100%;
+    margin-left: 15%;
+    position: relative;
+    padding-top: 55%;
+    padding-bottom: 15%;
+    margin-bottom: 30%;
+    
+}
+.centre0, .centre1{
+    text-align: center;
+}
+ul li{
+    padding: 1% 6%;
+}
+.centre1 button{
+    background-color: #07338C;
+    margin: 1%;
+    padding: 1.5% 2%;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid;
+    border-color: #07338C;
+    margin-right: 4%;
+}
+.absolue1{
+    position: absolute;
+    width: 100%;
+    top: -30%;
+    left: 12%;
+    margin: auto;
+}
+.absolue1 img{
+    height: 80%;
+    width: 76%;
+}
+
+
+.texte{
+    color: black;
+}
+.panther6 img{
+    padding-top: 100%;
+    width: 100%;
+}
+@media screen and (max-width:900px) {
+    .contenaire{
+        display: block;
+    }
+    .colonne1{
+        width: 95%;
+        min-height: 1500px;
+        padding-bottom: 10%;
+    }
+    .colonne2{
+        width: 63%;
+    }
+    
+    .panther6 img{
+        padding-top: 0;
+        width: 100%;
+        margin-left: 30%;
+    }
+    .tchalla{
+        padding-top: 50%;
+        margin-top: 50%;
+        margin-left: 25%;
+    }
+    .absolue1{
+        width: 95%;
+    }
+    .texte0 ul {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width:450px)  {
+    .absolue1{
+        top: -17%;
+    }
+    .texte0 ul {
+        padding-left: 2%;
+    }
+}
+/* folmulaire */
+.formulaire{
+    text-align: center;
+    background: linear-gradient(to bottom, white, transparent);
+    width: 40%;
+    margin: auto;
+    padding: 2% 10%;
+    border-radius: 120px;
+    color: #021740;
+
+}
+
+.form0 input{
+    border: 20px;
+    border-radius: 40px 40px;
+    border: 1px solid #021740;
+    width: 96%;
+    height: 56px;
+    padding-left: 5%;
+    background: none; 
+    margin-bottom: 3%;
+    color: #021740;
+
+    
+}
+.form1 input{
+    border: 20px;
+    border-radius: 40px 40px;
+    border: 1px solid #021740;
+    width: 96%;
+    height: 56px;
+    padding-left: 5%;
+    background: none;
+    margin-bottom: 3%;
+    color: #021740;
+
+}
+.form2 input{
+    border: 20px;
+    border-radius: 40px 40px;
+    border: 1px solid #021740;
+    width: 96%;
+    height: 200px;
+    padding-left: 5%;
+    background: none;
+    margin-bottom: 3%;
+    color: #021740;
+    
+}
+.form4 button{
+    width: 170px;
+    height: 54px;
+    text-align: center;
+    background: #FFFF;
+    border-radius: 40px 40px;
+    background-color: none;
+}
+.form4 button:hover{
+   filter: drop-shadow(0 2px 1.5rem #021740);
+}
+.contact{
+    background-image: url("../images/Illustrations + Logo/Accueil/Pantherhome7.png");
+    width: 101%;
+    padding: 12% 0;
+}
+@media screen and (max-width: 900px) {
+    .form1 input, .form0 input{
+        height: 30px;
+    }
+    .form4 button{
+        height: 35px;
+        width: 100px;
+    }
+    .formulaire{
+        background: linear-gradient(to bottom, rgb(193, 132, 234), transparent);
+}
+}
+@media screen and (max-width:550px) {
+    .formulaire{
+        border-radius: 50px;
+    }
+    .form0 input, .form1 input, .form2 input{
+        border-radius: 12px;
+    }
+    .form4 button{
+        font-size: 10px;
+        border-radius: 15px;
+        height: 20px;
+        width: auto;
+    }
+}
+/* foooter */
+.pieds{
+    background-image: url("/images/Illustrations + Logo/All pages/back_footer.png");
+    width: 101%;
+    padding-top: 10px;
+    height: 600px;
+
+}  
+.marvel{
+    display: flex;
+    margin-top: 8%;
+    height: 180px;
+    justify-content: right;
+}
+.propos{
+    display: flex;
+    width: 55%;
+}
+.rs{
+    padding-left: 15%;
+}
+.rs h4{
+    letter-spacing: 28%;
+}
+.reseau{ 
+    display: flex;
+}
+.rs1{
+    margin-right: 9%;
+}
+
+.final{
+    width: 28%;
+    height: 320px;
+    margin-left: 10%; 
+    position: relative;
+
+}
+
+.footer{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+}
+.footer img{
+    width: 85%;
+}
+.logo3 img{
+    margin-top: 30%;
+    margin-left: 38%;
+}
+.final:hover{
+    transform: scale(1.1);
+}
+/* .footer:hover{
+    transform: scale(1.1);
+} */
+.politique{
+    font-size: 10px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 5%; 
+    margin-left: 15%; 
+}
+.pltq{
+    margin: 0 5px;
+    color: #F2CEF2;
+}
+.pltq li a:before{
+    content: ".";
+}
+.pieds h4{
+    color: #FFFF;
+}
+.rs1:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:1200px) and (min-width:900px) {
+    .footer img{
+        width: 110%;
+        margin-top: 10%;
+        margin-left: -25%;
+    }
+    .logo3{
+        width: 50%;
+        margin-top: 30%;
+    }
+    .politique{
+        margin-left: 26%;
+    }
+}
+@media screen and (max-width:900px) {
+    .pieds{
+       height: 500px; 
+       padding-top: -10%;
+    }
+    .marvel{
+        display: block;
+        height: 300px;
+        margin-bottom: 10%;
+    }
+    .propos{
+        margin-top: 7%;
+        justify-content: center;
+        width: 100%;
+    }
+    .propos h4{
+        font-size: 12px;
+    }
+    
+    .final{
+        height: 70%;
+        width: 55%;
+        justify-content: center;
+        margin: auto;
+    }
+    .logo3 img{
+        width: 25%;
+        justify-content: center;
+        padding-top: -8%;
+    }
+    
+    .footer img{
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .politique{
+        display: block;
+        width: 70%;
+        text-align: center;
+        justify-content: left;
+    }
+    .rs h4{
+        letter-spacing: 10%;
+    }
+    .rs1 img{
+        width: 30px;
+    }
+    .propos a{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .final{
+        height: 130px;
+    }  
+    .propos{
+        display: block;
+    }
+    .page{
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+    .rs{
+        margin-left: 5%;
+    }
+}
+/* .popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100vw;
+    height: 100vw;
+    background: rgb(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    height: 220px;
+    z-index: 2;
+    text-align:center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup.close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height:30px;
+    background: #222;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.avtive .overlay{
+    display: block;
+}
+.popup.avtive .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+} */
+
+
+
+

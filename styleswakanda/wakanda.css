@@ -1,0 +1,395 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+@font-face{
+    font-family: "h1";
+    src: url(/fonts/PantheraRegular-MVZ9J.ttf);
+}
+
+@font-face{
+    font-family: "h2";
+    src: url(/fonts/WakandaForever-Regular.ttf);
+}
+
+@font-face{
+    font-family: "h3";
+    src: url(/fonts/FontsFree-Net-BEYNO.ttf);
+}
+@font-face{
+    font-family: "p" ;
+    src: url(/fonts/Cantarell-Regular.ttf);
+}
+h1{
+    font: 68px "h1";
+    color: #9E91B7;
+}
+h2{
+    font: 43px "h2";
+    color: #9E91B7;
+}
+
+p,  .page a{
+    font: 16px "p";
+    color: #FFFF;
+}
+.politique a{
+    font: 10px "p";
+    color: #FFFF;
+}
+.propos h4, .rs h4{
+    font: 18px "p";
+    letter-spacing: 6px;
+}
+h3{
+    font: 28px "h3";
+    color: #9E91B7;
+}
+.barre a{
+    font: 24px "h3";
+    color: #9E91B7; 
+}
+h4{
+    font: 22px "h4";
+    letter-spacing: 6px;
+}
+span{
+    font: 14px "p";
+    color: #FFFF; 
+}
+@media screen and (max-width: 900px) {
+    .barre2 a{
+        font-size: 16px;
+    }  
+    .barre1 img{
+        height: 20px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    p, .page a, ul{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 18px ;
+    }
+    .politique a{
+        font-size: 8px;
+        
+    }
+    .propos h4, .rs h4{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+}
+
+/* barre de navigation */
+.barre{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5% 0 5%; 
+ }
+ .barre1 img:hover{
+     filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(500%) constrat(1);
+ }
+.barre2 {
+    display: flex;
+    margin-right: 3%;
+}
+.barre2 a{
+    padding: 0% 5%;
+    color: #FFFF;
+}
+.barre2 a:hover{
+    text-decoration: underline;
+    color: #9E91B7;
+    
+}
+@media screen and (max-width:650px)  {
+    .barre{
+        padding: 5% 6% 0 6%; 
+     }
+     .barre1 img{
+        height: 18px;
+    }
+    .barre2 a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:450px)  {
+    .barre{
+        padding: 5% 2% 0 2%; 
+     }
+     .barre1 img{
+        height: 15px;
+    }
+    .barre2 a{
+        font-size: 10px;
+    }
+}
+/*body */
+body{
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-image: url("../images/Illustrations + Logo/All pages/arrière_plan.png");
+    overflow-x: hidden;
+    animation: fade-in 1s;
+}  
+@keyframes fade-in{
+    from{
+        transform: translateX(-10%);
+    }
+    to{
+        transform:translateX(0) ;
+    }
+}
+a:hover{
+    text-decoration: underline;
+}
+/* premiere section */
+.texte1{
+    text-align: justify;
+    width: 500px;
+}
+.wakanda{
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+    background-image: url("../images/Illustrations + Logo/Wakanda/Pantherwakanda1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    margin-top: 4%;
+}
+.texte1{
+    width: 40%;
+}
+@media screen and (max-width: 1300px) {
+    .texte1{
+        width: 100%;
+    }
+    .wakanda{
+        padding: 8% 3%;
+}
+}
+@media screen and (max-width: 600px) {
+    .barre2 a{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+
+/* 2eme section */
+.recit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: justify;
+    padding: 5% 4% 14% 6%;
+    background-image: url("../images/Illustrations + Logo/Wakanda/Pantherwakanda2.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 90%;
+    margin-top: none;
+}
+.image21 img{
+    width: 94%;
+}
+.colonne1{
+    width: 85%;
+}
+.colonne2{
+    width: 85%;
+}
+@media screen and (max-width: 600px) {
+    .recit{
+        display: block;
+        width: 100%;
+    }
+}
+
+/* foooter */
+.pieds{
+    background-image: url("/images/Illustrations + Logo/All pages/back_footer.png");
+    width: 100%;
+    padding-top: 10px;
+    height: 600px;
+     /* position: relative; */
+}  
+.marvel{
+    display: flex;
+    margin-top: 8%;
+    /* position: relative; */
+    height: 180px;
+    justify-content: right;
+}
+.propos{
+    display: flex;
+    width: 55%;
+    /* margin-left: 12%; */
+}
+.rs{
+    padding-left: 15%;
+}
+.rs h4{
+    letter-spacing: 28%;
+}
+.reseau{ 
+    display: flex;
+}
+.rs1{
+    margin-right: 9%;
+}
+
+.final{
+    width: 28%;
+    height: 320px;
+    margin-left: 10%; 
+    position: relative;
+
+}
+
+.footer{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+}
+.footer img{
+    width: 85%;
+}
+.logo3 img{
+    margin-top: 30%;
+    margin-left: 38%;
+}
+.final:hover{
+    transform: scale(1.1);
+}
+/* .footer:hover{
+    transform: scale(1.1);
+} */
+.politique{
+    font-size: 10px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 5%; 
+    margin-left: 15%; 
+}
+.pltq{
+    margin: 0 5px;
+    color: #F2CEF2;
+}
+.pltq li a:before{
+    content: ".";
+}
+.pieds h4{
+    color: #FFFF;
+}
+.rs1:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:1200px) and (min-width:900px) {
+    .footer img{
+        width: 110%;
+        margin-top: 10%;
+        margin-left: -25%;
+    }
+    .logo3{
+        width: 50%;
+        margin-top: 30%;
+    }
+    .politique{
+        margin-left: 26%;
+    }
+}
+@media screen and (max-width:900px) {
+    .pieds{
+       height: 500px; 
+       padding-top: -10%;
+    }
+    .marvel{
+        display: block;
+        height: 300px;
+        margin-bottom: 10%;
+    }
+    .propos{
+        margin-top: 7%;
+        justify-content: center;
+        width: 100%;
+    }
+    .propos h4{
+        font-size: 12px;
+    }
+    
+    .final{
+        height: 70%;
+        width: 55%;
+        justify-content: center;
+        margin: auto;
+    }
+    .logo3 img{
+        width: 25%;
+        justify-content: center;
+        padding-top: -8%;
+    }
+    
+    .footer img{
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .politique{
+        display: block;
+        width: 70%;
+        text-align: center;
+        justify-content: left;
+    }
+    .rs h4{
+        letter-spacing: 10%;
+    }
+    .rs1 img{
+        width: 30px;
+    }
+    .propos a{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .final{
+        height: 130px;
+    }  
+    .propos{
+        display: block;
+    }
+    .page{
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+    .rs{
+        margin-left: 5%;
+    }
+}
+
+
+
+
