@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>evaluation</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="scripts/index.js"></script>
 </head>
 <body>
+    <div class="curseur">
+        <img src="./images/Illustrations + Logo/logo_souris_BP1_blanc.png" height="80px" alt="">
+    </div>
    <header>
-    <section>
+    <section id="côté">
         <div class="coté">
             <div class="coté1"></div>
             <div class="coté2">
@@ -42,10 +46,10 @@
     <section>
         <div class="black"> 
             <div class="black1">
-                <h1> BLACK PANTHER</h1>
-                <h2>WAKANDA FOREVER</h2>
+                <h1 class="scroll"> BLACK PANTHER</h1>
+                <h2 class="scroll">WAKANDA FOREVER</h2>
                  <div>
-                    <p class="intro">En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
+                    <p class="intro scroll">En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
                         hommage aux cultures africaine et afro-américaine.  On y évoque le
                         racisme, la colonisation etles violences contre les afro-américains. <br>
                         Ce film marque toutune génération,“ c’est 100% africain et c’est parfait”. <br> <br> <p style="text-decoration: underline;">Voir plus ></p> </a></p>            
@@ -54,47 +58,150 @@
         </div>
     </section>
     <section>          
-        <div class="acteur1"> 
-            <div class="display1">
-                <div class="panther1">
+        <div class="acteur1 scroll"> 
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
                     <img src="images\Illustrations + Logo\Accueil\Pantherhome2.png" alt="" >
                 </div>    
-                <div class="kill1">
+                <div class="kill description-acteur">
                     <h3>KILLMONGER</h3>
                     <p>La sauvagerie de N'Jadaka alors qu'il servait dans une
-                        unité d'opérations noires de l'armée américaine lui a
-                        valu le surnom de Killmonger. D’origine Wakandaise,
-                        et se sentant abandoné par sa nation, il cherche à
-                        détroner T’Challadans unequête vers le pourvoi</p>
-                        <p style="text-decoration: underline;">Voir plus ></p> 
+                    unité d'opérations noires de l'armée américaine lui a
+                    valu le surnom de Killmonger. D’origine Wakandaise,
+                    et se sentant abandoné par sa nation, il cherche à
+                    détroner T’Challadans unequête vers le pouvoir. <br>
+                    <a href="">Voir plus ></a></p> 
                 </div>
             </div>
-            <div class="display2">
-                <div class="panther2">
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
                     <img src="images\Illustrations + Logo\Accueil\Pantherhome3.png" alt="">
                 </div>
-                <div class="kill2">
+                <div class="kill description-acteur">
                     <h3>OKOTE</h3>
-                    <p>Okoye est le général des Dora Milaje (groupe d’élite de femmes guerrières) et le chef des forces armées et des renseignements wakandais. Témoin du couronnement de T'Chall, elle se joint à lui dans de nombreuses aventures</p>
-                    <p style="text-decoration: underline;">Voir plus ></p>    
+                    <p>Okoye est le général des Dora Milaje (groupe d’élite de femmes guerrières) et le chef des forces armées et des renseignements wakandais. Témoin du couronnement de T'Chall, elle se joint à lui dans de nombreuses aventures. <br>
+                     <br><a >Voir plus > </a></p>    
                  </div>
             </div>
-            <div class="panther3">
-                <img src="images\Illustrations + Logo\Accueil\Pantherhome4.png" alt="">
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
+                    <img src="images/Illustrations + Logo/1_Landing_page/Pantherhome_slider_4.png" alt="">
+                </div>
+                    <div class="kill description-acteur">
+                        <h3>SHURI</h3>
+                        <p>Shuri est la Princesse du Wakanda, la fille de T'Chaka et
+                        de Ramonda, la sœur de T'Challa et la leader du Groupe
+                        de Design du Wakanda. Innovatrice, elle est chargée de
+                        créer une grande partie de la technologie moderne du
+                        Wakanda ainsi que les Habits de la Panthère. <br>
+                        <a href="">Voir plus ></a> </p>
+                    </div>   
+                </div>        
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
+                    <img class="image-acteur" src="./images/Illustrations + Logo/1_Landing_page/Pantherhome_slider_5.png" alt="">
+                </div>
+                <div class="kill description-acteur">
+                    <h3>RAMONDA</h3>
+                    <p>Ramonda est la Reine Mère du Wakanda, épouse de
+                    T'Chaka et mère de T'Challa et Shuri. Elle se tenait aux
+                    côtés de son fils quand il devint le Roi du Wakanda, mais
+                    fut forcée de partir en exil lorsque Erik Killmonger vainquit
+                    T'Challa et prit le contrôle du trône. <br>
+                    <a href="">Voir plus > </a></p>
+                </div>
             </div>
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
+                    <img class="image-acteur" src="./images/Illustrations + Logo/1_Landing_page/Pantherhome_slider_6.png" alt="">
+                </div>
+                <div class="kill description-acteur">
+                    <h3>W'kabi</h3>
+                    <p>W'Kabi est l'ancien chef de la sécurité pour la Tribu de la Porte
+                    du Wakanda ainsi que l'ancien meilleur ami de T'Challa. Ayant
+                    perdu la foi en son roi pour avoir échouer à capturer Ulysses
+                    Klaue, l'homme responsable de la mort de ses parents,
+                    W'Kabi apporta son soutien à Erik Killmonger et lui permit de
+                    prendre le trône du Wakanda <br>
+                    <a href="">Voir plus > </a></p>
+                </div>
+            </div>
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
+                    <img  class="image-acteur" src="./images/Illustrations + Logo/1_Landing_page/Pantherhome_slider_7.png" alt="">
+                </div>
+                <div class="kill description-acteur">
+                    <h3>m'baku</h3>
+                    <p>M'Baku est le chef de la Tribu Jabari, un groupe de
+                    Wakandais qui s'étaient écartés de la société principale
+                    du Wakanda et un fervant opposant du pouvoir de
+                    T'Challa, mais échoua à le vaincre lors de l'affrontement
+                    rituel pour le trône, avant de l'aider à défendre le
+                    Wakanda face à Erik Killmonger. <br>
+                    <a href="">Voir plus ></a></p>   
+                </div>
+            </div>
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
+                    <img class="image-acteur" src="./images/Illustrations + Logo/1_Landing_page/Pantherhome_slider_8.png" alt="">
+                </div>
+                <div class="kill description-acteur">
+                    <h3>ZURI</h3>
+                    <p>Zuri était un ancien membre des Chiens de Guerre et
+                    un shaman Wakandais, loyal conseiller de son Roi.
+                    Après avoir gardé les secrets de T'Chaka à propos de
+                    sa gestion de la mort de N'Jobu dans le passé, Zuri
+                    continua à soutenir le Roi du Wakanda alors que
+                    T'Challa reprenait le trône. <br>
+                    <a href=""> Voir plus ></a></p> 
+                </div>
+            </div>
+            <div class="display sous-actuer">
+                <div class="panther image-acteur">
+                    <img class="image-acteur" src="./images/Illustrations + Logo/1_Landing_page/Pantherhome_slider_9.png" alt="">
+                </div>
+                <div class="kill description-acteur">
+                    <h3>EVERETT KNNETH ROSS</h3>
+                    <p>L'Agent Everett Ross est un agent de la CIA et un ancien
+                    Commissaire Exécutif à l'Antiterrorisme pour la Force
+                    Conjointe AntiTerroriste. Après avoir quitté la Force Conjointe
+                    AntiTerroriste, Ross fut chargé de traquer et neutraliser
+                    Ulysses Klaue, ce qui plaça Ross sur le chemin de Black
+                    Panther, qui cherchait à capturer de nouveau Klaue pour ses
+                    crimes passés. <br><a href="">Voir plus > </a></p>        
+                </div>
+            </div>
+            <div class="display sous-actuer">
+                <div  class="panther image-acteur">
+                    <img class="image-acteur" src="./images/Illustrations + Logo/1_Landing_page/Pantherhome_slider_10.png" alt="">
+                </div>
+                <div class="kill description-acteur">
+                    <h3>ULUSSE KLA</h3>
+                    <p>Ulysses Klaue est un criminel international, gangster et vendeur
+                    d'armes sur le marché noir. En 1992, il collabora avec N'Jobu afin
+                    de voler une quantité importante de vibranium au Wakanda. Bien
+                    qu'il soit parvenu à voler et à s'échapper avec un stock important, il
+                    reçut une marque sur le cou de la part des Wakandais. <br>
+                    <a href="">Voir plus ></a></p>    
+                </div>
         </div>
+    </div>    
+    <img id="droite" src="./images/Illustrations + Logo/Accueil/fleche.svg" alt="">
+    <img id="gauche" src="./images/Illustrations + Logo/Accueil/fleche.svg" alt="">
+        </div>
+    </div>
     </section>
     <section>
         <div class="contenaire">
             <div class="colonne1" >
-                <div>
+                <div class="scroll">
                 <h3>NAISSANCE D'UN PRINCE</h3>
                 <p>T'Challa est né au Wakanda, un pays isolationniste situé en Afrique, du monarque régnant T'Chaka et de sa femme
                     Ramonda. Il a finalement eu une sœur cadette nommée Shuri. S'entraînant toute sa vie pour prendre la place de son père
                     en tant que prochain Black Panther, T'Challa est devenu un homme avec un esprit très actif et malgré tous les efforts de
                     T'Chaka, une grande aversion pour la politique.</p>
                 </div>
-                <div>
+                <div class="scroll">
                 <p>T'Challa est poli, respectueux et très attentionné envers les gens qu'il côtoie et qu'il considère comme ses amis. Il est
                     démontré qu'il a un grand respect envers les autres, en particulier envers son père, T'Chaka. Il honore la tradition et les
                     principes du Wakanda et est prêt à agir chaque fois que cela est nécessaire. À la mort de son père, il était disposé et prêt à
@@ -103,53 +210,53 @@
                     de ses ennemis. Cela étantdit, il n'est pas opposé àtuer sesadversaires dans un combat et n'essaie pas toujours d'éviter les
                     mesures mortellesde lesneutraliser.</p> 
                 </div>
-                <div>
+                <div class="scroll">
                     <p>« Toute ma vie, je l'ai regardé porter le costume. Il pouvait soulever un homme à une seule main et courir aussi vite
                         qu'un zèbre. Puis il m'a dit qu'il était trop vieux pour continuer à endosser le rôle de Black Panther; il me l'a alors
                         passé afin de simplement rester roi. <br>
                         – Il me disait qu'il ne pouvait plus rentrer dans le costume. » <br>
                         — T'Challa et Zuri</p>
                 </div>
-                <div>
+                <div class="scroll">
                     <h3>UN HEROS VENGEUR</h3>
                     <p>« La mort, dans notre culture, n'est pas la fin. Pour nous, c'est plutôt un point de départ. Le défunt n'a qu'à tendre les
                         bras; et Bast et Sekhmet le guident jusqu'à l'entrée de la grande vallée où il résidera à tout jamais. <br> – C'est une vision très pacifique. <br> – À l'image de mon père. Je ne suis pas mon père. » <br> — T'Challa et Natasha Romanoff</p>
                 </div>
-                <div>
+                <div class="scroll">
                     <p>Suite à la mort de son père dans l'attentat à la bombe orchestré par Helmut Zemo, terroriste souhaitant la chute des
                         Avengers, T'Challa avait entrepris de tuer le Soldat de l'hiver, qui était largement considéré (à tort) comme responsable de
                         l'attaque. Au cours de sa tentative de trouver le Soldat de l'hiver, Black Panther avait rejoint une guerre civile entre les
                         Avengers, où il s'était rangédu côté d'Iron Man. T’Challa estalors animé par son désir de vengeance de la mort de son père,
                         ce qu’il partage avecIron Man, tous deux victimesdel’assassinat deleurs parents.</p>
                 </div>
-                <div>
+                <div class="scroll">
                     <p>Cependant, Black Panther apprend finalement en capturant Zemo, que c’était lui le seul responsable de la mort de son
                         père, et que le Soldat de l’hiver n’était alors qu’une arme entre les mains de Zemo. Se rendant compte de la supercherie
                         ainsi que de la voie sombre de la vengeance, T’Challa se promet de ne plus permettre aux désirs de vengeance de le
                         consumer à nouveau.</p>
                 </div>
-                <div>
+                <div class="scroll">
                     <p>« Quelle est la meilleure façon de protéger le Wakanda ? Je dois devenir un grand roi baba, comme tu l'étais. <br> – Tu devras lutter. Pour ça, il te faudra t'entourer de personnes de confiance. Tu es un homme bon, avec un grand
                         coeur. C'est difficile pour un homme bon d'être roi. » <br> — T'Challa et T'Chaka</p>
                 </div>
-                <div>
+                <div class="scroll">
                     <h3>UN HEROS PROTECTEUR JUSTICIER</h3>
                 </div>
-                <div>
+                <div class="scroll">
                     <p>Il y a des siècles, alors que cinq tribus africaines se disputaient une météorite composée de vibranium métallique
                         extraterrestre, un chaman guerrier Bashenga, guidé par la déesse panthère Bast, ingère une herbe en forme de cœur
                         affectée par le métal et acquiert des capacités surhumaines.Devenu le premier"Black Panther", il unit toutes les tribus sauf
                         la tribu des Jabari, et forme la nation du Wakanda. Au fil du temps, les Wakandains utilisent le vibranium pour développer
                         une technologie depointetouten s'isolant du restedumondeet en sefaisant passer pour un pays du tiers monde.</p>
                 </div>
-                <div>
+                <div class="scroll">
                     <p>Il y a des siècles, alors que cinq tribus africaines se disputaient une météorite composée de vibranium métallique
                         extraterrestre, un chaman guerrier Bashenga, guidé par la déesse panthère Bast, ingère une herbe en forme de cœur
                         affectée par le métal et acquiert des capacités surhumaines.Devenu le premier"Black Panther", il unit toutes les tribus sauf
                         la tribu des Jabari, et forme la nation du Wakanda. Au fil du temps, les Wakandains utilisent le vibranium pour développer
                         une technologie depointetouten s'isolant du restedumondeet en sefaisant passer pour un pays du tiers monde.</p>
                 </div>
-                <div>
+                <div class="scroll">
                     <p>Après les événements quise sont déroulés dans"Captain America: Civil War", T'Challa revient chezlui prendre sa place sur
                         le trône du Wakanda, une nation africaine technologiquement très avancée. Néanmoins, T’Challa se retrouve rapidement
                         mis au défi pour obtenir le trône. Une fois couronné il espère accomplir une tâche que son père n’aura pas pu mener à son
@@ -158,7 +265,7 @@
                         sur sa famille qui lui fera prendre conscience de la nécessité de s’ouvrir au monde exterieur afin de ne pas répeter les
                         erreurs de son père.</p>
                 </div>
-            </div>
+            </div class="scroll">
             <div class="colonne2">
                 <div class="tchalla">
                     <div class="absolue1">
@@ -193,7 +300,7 @@
         </div>    
     </section>
     <section class="contact">
-        <form class="formulaire">
+        <form class="formulaire scroll">
                 <p> <span style="color: #021740; font: 14px p;"> Besoin de l’intervention du Wakanda ? </span> </p>
                 <div class="letter">
                     <h4> <span> <strong style="color: #021740;"> Contactez nous !</strong></span></h4>
@@ -225,7 +332,7 @@
    </main>
    <footer>
     <section>
-        <div class="pieds">
+        <div class="pieds scroll" >
             <div class="marvel">
                 <div class="final">
                     <div class="footer">
@@ -269,9 +376,4 @@
     </section>       
    </footer>
 </body>
-<script>
-    // function togglePoppup(){
-    //     document.getElementById("popup-1").classList.toggle("active");
-    // }
-</script>
 </html>

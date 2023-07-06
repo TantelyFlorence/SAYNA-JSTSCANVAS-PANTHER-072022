@@ -1,3 +1,4 @@
+@import url(../styles/animation.css);
 *{  
     text-decoration: none;
     list-style: none;
@@ -9,7 +10,7 @@
 /* police */
 @font-face{
     font-family: "h1";
-    src: url(/fonts/PantheraRegular-MVZ9J.ttf);
+    src: url(../fonts/PantheraRegular-MVZ9J.ttf);
 }
 h1{
     font: 68px "h1";
@@ -17,7 +18,7 @@ h1{
 }
 @font-face{
     font-family: "h2";
-    src: url(/fonts/FontsFree-Net-BEYNO.ttf);
+    src: url(../fonts/FontsFree-Net-BEYNO.ttf);
 }
 h2{
     font: 32px "h2";
@@ -29,7 +30,7 @@ h2{
 }
 @font-face{
     font-family: "h3";
-    src: url(/fonts/FontsFree-Net-BEYNO.ttf);
+    src: url(../fonts/FontsFree-Net-BEYNO.ttf);
 }
 h3{
     font: 28px "h2";
@@ -37,7 +38,7 @@ h3{
 }
 @font-face{
     font-family: "p" ;
-    src: url(/fonts/Cantarell-Regular.ttf);
+    src: url(../fonts/Cantarell-Regular.ttf);
 }
 
 p,  .page a{
@@ -120,30 +121,42 @@ p,  .page a{
         font-size: 16px;
     }
 }
-/* no scroll */
+/* animation */
+
+
 
 /* barre de navigation */
 .coté{
-    position: absolute;   
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 10px;
 }
 .coté1{
-    background-color: #FFFF;
+    background-color: #9E91B7;
     height: 550px;
     width: 3px;
-    position: fixed;
-    margin-left: 1%;
-    top: 0;
 }
-.coté2{
-    position: fixed;
-    top: 0;
+.réseaux img{
+    margin: 10px;
 }
+.réseaux img:hover{
+    filter: brightness(0) invert(1);
+}
+
 .coté3{
-    background-color: #FFFF;
-    height: 450px;
-    width: 3px;
-    margin-left: 150%;
+    background-color: #9E91B7;
+    height: 380px;
+    width: 4px;
+    margin-left: 20px;
 }
+
+/* .coté{
+    position: relative;
+    height: 500px;
+    width: 500px;   
+}
+
 @media screen and (max-width:900px) {
     .coté1{
         height: 270px;
@@ -165,14 +178,9 @@ p,  .page a{
     .réseaux img{
         width: 8px;
     }   
-}
+} */
+/* curseur */
 
-.réseaux img{
-    margin-left: 110%;
-}
-.réseaux img:hover{
-    filter: brightness(0) invert(1);
-}
 
 .barre{
    display: flex;
@@ -224,7 +232,17 @@ body{
     background-image: url("../images/Illustrations + Logo/All pages/arrière_plan.png");
     overflow-x: hidden;
     animation: fade-in 1s;
+    margin: 0%;
+    padding: 0%;
 }  
+.curseur{
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    pointer-events: none;
+}
 @keyframes fade-in{
     from{
         transform: translateX(-10%);
@@ -258,10 +276,10 @@ a:hover{
     width: 50%;
 }
 /* 2eme section */
-.kill1 a, .kill2 a{
+.kill a{
     color: white;
 }
-.kill1, .kill2{
+.kill{
     padding:2%;
 }
 
@@ -274,13 +292,35 @@ a:hover{
     height: 260px;
     text-align: justify;
     width: 91%;
+    transition: all 1s ease;
 }
 .acteur1 img{
     height: 260px;
     width: 160px;
 }
-.display1, .display2{
+.display{
     display: flex;
+    background-color: #021740;
+    transition: all 1s ease;
+}
+.sous-actuer{
+    display: flex;
+    gap: 2%;
+    margin-left: 2%;
+}
+.description-acteur{
+    min-height: 50%;
+    height: auto;
+}
+.description-acteur p, a{
+    text-align: justify;
+    font-size: 12px;
+    width: 260px;
+    height: auto;
+}
+.image-acteur{
+    height: 250px;
+    width: auto;
 }
 @media screen and (max-width: 1000px) {
     .acteur1{
@@ -292,15 +332,42 @@ a:hover{
         background-color: #021740;
         margin: 1%;
     }
-    .kill1, .kill2{
+    .kill{
         padding: 2%;
     }
 }
 @media screen and (max-width:   1300px){
-    .kill1 p, .kill2 p{
+    .kill{
         font-size: 12px;
     }
 }
+/* flèche */
+#droite {
+    width: 200px;
+    position: absolute;
+    top: 850px;
+    right: -80px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+#droite:hover {
+    opacity: 1;
+}
+#gauche  {
+    width: 200px;
+    position: absolute;
+    top: 850px;
+    left: 20px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+#gauche:hover {
+    opacity: 1;
+}
+
 /* 3eme section */
 .contenaire{
     display: flex;
@@ -702,6 +769,5 @@ ul li{
     transform: translate(-50%, -50%) scale(1);
 } */
 
-
-
+/* animation */
 

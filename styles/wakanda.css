@@ -1,33 +1,40 @@
+@import url(../styles/animation.css);
 *{
-    list-style: none;
     text-decoration: none;
+    list-style: none;
 }
+
 *:focus{
     outline: none;
 }
-/* police */
+
+@font-face{
+    font-family: "h1";
+    src: url(../fonts/PantheraRegular-MVZ9J.ttf);
+}
 
 @font-face{
     font-family: "h2";
-    src: url(/fonts/FontsFree-Net-BEYNO.ttf);
+    src: url(../fonts/WakandaForever-Regular.ttf);
 }
 
 @font-face{
-    font-family: "p" ;
-    src: url(/fonts/Cantarell-Regular.ttf);
+    font-family: "h3";
+    src: url(../fonts/FontsFree-Net-BEYNO.ttf);
 }
 @font-face{
-    font-family: "forever";
-    src: url(/fonts/WakandaForever-Regular.ttf);
+    font-family: "p" ;
+    src: url(../fonts/Cantarell-Regular.ttf);
 }
 h1{
+    font: 68px "h1";
+    color: #9E91B7;
+}
+h2{
     font: 43px "h2";
     color: #9E91B7;
 }
-.barre2 a{
-    font: 24px "h2";
-    color: #9E91B7;
-}
+
 p,  .page a{
     font: 16px "p";
     color: #FFFF;
@@ -36,10 +43,25 @@ p,  .page a{
     font: 10px "p";
     color: #FFFF;
 }
-
 .propos h4, .rs h4{
     font: 18px "p";
     letter-spacing: 6px;
+}
+h3{
+    font: 28px "h3";
+    color: #9E91B7;
+}
+.barre a{
+    font: 24px "h3";
+    color: #9E91B7; 
+}
+h4{
+    font: 22px "h4";
+    letter-spacing: 6px;
+}
+span{
+    font: 14px "p";
+    color: #FFFF; 
 }
 @media screen and (max-width: 900px) {
     .barre2 a{
@@ -49,7 +71,7 @@ p,  .page a{
         height: 20px;
     }
     h1{
-        font-size: 32px;
+        font-size: 36px;
     }
     h2{
         font-size: 28px;
@@ -78,15 +100,39 @@ p,  .page a{
 }
 
 /* barre de navigation */
+.coté{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 10px;
+}
+.coté1{
+    background-color: #9E91B7;
+    height: 550px;
+    width: 3px;
+}
+.réseaux img{
+    margin: 10px;
+}
+.réseaux img:hover{
+    filter: brightness(0) invert(1);
+}
+
+.coté3{
+    background-color: #9E91B7;
+    height: 380px;
+    width: 4px;
+    margin-left: 20px;
+}
 
 .barre{
-   display: flex;
-   justify-content: space-between;
-   padding: 5% 9% 0 9%; 
-}
-.barre1 img:hover{
-    filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(500%) constrat(1);
-}
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5% 0 5%; 
+ }
+ .barre1 img:hover{
+     filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(500%) constrat(1);
+ }
 .barre2 {
     display: flex;
     margin-right: 3%;
@@ -94,11 +140,11 @@ p,  .page a{
 .barre2 a{
     padding: 0% 5%;
     color: #FFFF;
-
 }
 .barre2 a:hover{
     text-decoration: underline;
-    color: #9E91B7;   
+    color: #9E91B7;
+    
 }
 @media screen and (max-width:650px)  {
     .barre{
@@ -122,20 +168,29 @@ p,  .page a{
         font-size: 10px;
     }
 }
-/* body */
-/* les liens */
-a{
-    color: white;
-}
-a:hover{
-    text-decoration: underline;
-}
+/*body */
 body{
     background-repeat: no-repeat;
-    background-size: 155% ;
+    background-size: cover ;
     background-image: url("../images/Illustrations + Logo/All pages/arrière_plan.png");
     overflow-x: hidden;
     animation: fade-in 1s;
+}
+.curseur{
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    pointer-events: none;
+}
+@keyframes fade-in{
+    from{
+        transform: translateX(-10%);
+    }
+    to{
+        transform:translateX(0) ;
+    }
 }  
 @keyframes fade-in{
     from{
@@ -145,224 +200,94 @@ body{
         transform:translateX(0) ;
     }
 }
+a:hover{
+    text-decoration: underline;
+}
 /* premiere section */
-.dora{
-    width: 60%;
-    padding-left: 53%;
-    padding-bottom: 15%;
-    position: relative;
-    background-image: url("../images/Illustrations + Logo/Enigme/Pantherenigme1.png");
-    background-position: left;
+.texte1{
+    text-align: justify;
+    width: 500px;
+}
+.wakanda{
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 5%;
+    background-image: url("../images/Illustrations + Logo/Wakanda/Pantherwakanda1.jpg");
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: 75% ;
+    opacity: 80%;
+    margin-top: 4%;
 }
-.défi{
-    padding-top: 15%;
+.texte1{
+    width: 40%;
 }
-.para1{
-    width: 60%;
-    text-align: justify;
-    padding-left: 4%;
-}
-.titreh1{
-    padding-bottom: 15%;
-    text-align: justify;
-    width: 48%;
-}
-.image1{
-    position: absolute;
-    top: 35%;
-    left: 38%;
-}
-.img2 img{
-    width: 80%;
-}
-@media screen and (min-width: 1400px) {
-    .img2 img{
-        width: 110%;
-    }
-}
-@media screen and (max-width:1300px) {
-    .titreh1{
+@media screen and (max-width: 1300px) {
+    .texte1{
         width: 100%;
     }
-    .dora{
-        padding-left: 10%;
-        padding-top: 15%;
-        width: 120%;
+    .wakanda{
+        padding: 8% 3%;
+}
+}
+@media screen and (max-width: 600px) {
+    .barre2 a{
+        font-size: 12px;
     }
-    .image1{
-        top: 45%;
-        left: 1%;
-    } 
-    .img2 img{
-        width: 110%;
-    }   
-}
-
-@media screen and (max-width:950px) {
-    .image1{
-        top: 50%;
-        left: 1%;
-    } 
-    .img2 img{
-        width: 95%;
-    }   
-}
-@media screen and (max-width:850px) {
-    .image1{
-        top: 50%;
-        left: 1%;
-    } 
-    .img2 img{
-        width: 80%;
-    }   
-}
-
-
-/* 2eme section */
-.fidele p{
-    font: 32px "forever";
-    color: #9E91B7;
-    letter-spacing: 6px;
-    padding-left: 8%;
-    padding-top: 5%;
-}
-.dechiffrer{
-    padding-left: 8%;
-    font: 24px;
-}
-.dechiffrer span{
-    font: 24px "forever";
-}
-@media screen and (max-width: 950px) {
-    .fidele p{
+    h1{
+        font-size: 28px;
+    }
+    h2{
         font-size: 20px;
     }
 }
 
-/* 3eme section */
-.source{
-    text-align: center;
-    padding-left: 48%;
-    padding-bottom: 3%;
-    width: 45%;
+/* 2eme section */
+.recit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: justify;
+    padding: 5% 4% 14% 6%;
+    background-image: url("../images/Illustrations + Logo/Wakanda/Pantherwakanda2.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 90%;
+    margin-top: none;
 }
-.lettre{
-    position: relative;
+.image21 img{
+    width: 94%;
 }
-.img3{
-    position: absolute;
-    left: 42%;
-    bottom: -98%;
+.colonne1{
+    width: 85%;
 }
-.img3 img{
-    width: 101%;
+.colonne2{
+    width: 85%;
 }
-@media screen and (min-width: 1400px) {
-    .img3 img{
-        width: 110%;
+@media screen and (max-width: 600px) {
+    .recit{
+        display: block;
+        width: 100%;
     }
 }
-@media screen and (max-width: 1300px) {
-    .img3 img{
-        width: 105%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .source{ 
-        padding-left: 8% 3% 3% 8% ;
-    }
-    .source p{
-        font-size: 12px;
-    }
-    .img3{
-        width: 55%;
-    }
-}
-@media screen and (max-width: 450px) {
-    .source{
-        width: 95%;
-        padding-left: 2%;
-        padding-top: 5%;
-        padding-bottom: 10%;
-    }
-    .source p{
-        font-size: 10px;
-    }
-    .img3{
-        width: 90%;
-        left: 3%;
-        top: -36%;
-    }
-
-
-}
-
-
-
-.form11{
-    width: 300px;
-    padding-left: 8%;
-    padding-bottom: 10%;
-}
-
-.input1 input{
-    width: 380px;
-    height: 54px;
-    text-align: left;
-    background: #FFFF;
-    border-radius: 40px 40px;
-    background-color: transparent;
-    border: 1px solid #FFFF;
-    margin-bottom: 5%;
-    padding-left: 5%;
-    color: #FFFF;
-}
-.input2 button{
-    width: 170px;
-    height: 54px;
-    text-align: center;
-    background: #FFFF;
-    border-radius: 38px 38px;
-    background-color: none;
-    margin-top: 10%;
-}
-.input2{
-    padding-left: 39%;
-}
-.input2:hover{
-    filter: drop-shadow(0 1px 1.5rem #F2CEF2);
-}
-@media screen and (max-width: 500px) {
-    .input1 input{
-        height: 34px;
-        width: 300px;
-    }
-    .input2 button{
-        width: 120px;
-        height: 34px;
-    }    
-}
-
 
 /* foooter */
 .pieds{
-    background-image: url("/images/Illustrations + Logo/All pages/back_footer.png");
-    width: 101%;
+    background-image: url("../images/Illustrations + Logo/All pages/back_footer.png");
+    width: 100%;
     padding-top: 10px;
     height: 600px;
+     /* position: relative; */
 }  
 .marvel{
     display: flex;
     margin-top: 8%;
+    /* position: relative; */
     height: 180px;
     justify-content: right;
 }
 .propos{
     display: flex;
     width: 55%;
+    /* margin-left: 12%; */
 }
 .rs{
     padding-left: 15%;
@@ -400,6 +325,9 @@ body{
 .final:hover{
     transform: scale(1.1);
 }
+/* .footer:hover{
+    transform: scale(1.1);
+} */
 .politique{
     font-size: 10px;
     display: flex;
@@ -503,9 +431,7 @@ body{
         margin-left: 5%;
     }
 }
- 
- 
- 
- 
- 
- 
+
+
+
+

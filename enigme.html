@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>evaluation</title>
-    <link rel="stylesheet" href="stylenigme/enigme.css">
+    <link rel="stylesheet" href="styles/enigme.css">
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/enigme.js" ></script>
 </head>
 <body>
+<div class="curseur">
+    <img src="./images/Illustrations + Logo/logo_souris_BP1_blanc.png" height="80px" alt="">
+</div>
     <header>
+        <section id="côté">
+            <div class="coté">
+                <div class="coté1"></div>
+                <div class="coté2">
+                    <div class="coté3"></div>
+                    <div class="réseaux">
+                        <div class="fb"><a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="images\Illustrations + Logo\All pages\icon_facebook.png" alt=""></a></div>
+                        <div class="insta"><a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="images\Illustrations + Logo\All pages\icon_instagram.png" alt=""></a></div>
+                        <div class="twitter"><a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="images\Illustrations + Logo\All pages\icon_twitter.png" alt=""></a></div>
+                        <div class="tiktok"><a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="images\Illustrations + Logo\All pages\icon_tiktok.png" alt=""></a></div>
+                    </div>
+                </div>    
+            </div>
         <nav>
             <div class="barre">
                 <div class="barre1">
@@ -26,7 +44,7 @@
     </header>
     <main>
         <section>
-            <div class="dora">
+            <div class="dora scroll">
                 <div class="défi">
                     <div class="titreh1">
                         <h1>RELEVE LE DEFI <br> DES DORA MILAJE </h1>
@@ -41,7 +59,7 @@
                           et apprend par la même occasion la première valeur d’une Dora Milaje !</p>
                     </div>
                 </div>
-                <div class="image1">
+                <div class="image1 scroll">
                     <div class="img2">
                         <img src="images\Illustrations + Logo\Enigme\Pantherenigme2.png" alt=""> 
                     </div>
@@ -50,8 +68,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="fidele">
+        <!-- <section>
+            <div class="fidele scroll">
                 <p>“ SI JE SUIS  FIDELE C’EST A CE TRONE <br> 
                     PEU IMPORTE QUI MONTE DESSUS ”</p>
             </div>
@@ -65,7 +83,7 @@
             </div>
         </section>
         <section>
-            <div class="lettre">
+            <div class="lettre scroll">
                 <div class="source">
                     <p> 
                         Le savais tu ?  <br>
@@ -78,10 +96,31 @@
                     <img src="images\Illustrations + Logo\Enigme\Pantherenigme2.png" alt="">
                 </div>
             </div>
+        </section> -->
+        <section  id="text-enigme">
+            <div class="sous-text-enigme"> 
+                <h2>ENIGME NUMERO : <span id="numEnigme"></span></h2>
+                
+                <div class="question form11 scroll"> 
+                    <p id="enonce"></p>
+                    <span id="indice"></span>
+                    <p id="form">Alors, as tu la réponse ?</p>
+                    <div class="input1"><input type="text" placeholder="Réponse" id="reponse"></div>
+                    <div  class="input2" id="div-btn">
+                        <button id="envoyer">ENVOYER</button>
+                    </div>
+                </div>
+            </div>
+            <div class="anecdote">
+                <div class="parent-acecdote">
+                    <p id="anecdote-text"></p>
+                    <img id="hero-img3" src="./images/Illustrations + Logo/Enigme/Pantherenigme2-1.png" alt="">
+                </div>
+            </div>
         </section>
         <section>
-            <form>
-                <div class="form11">
+            <!-- <form>
+                <div class="form11 scroll">
                     <p>Alors, as tu la réponse ?</p>
                     <div class="input1">
                         <input type="text" placeholder="Réponse"> 
@@ -90,11 +129,11 @@
                         <button>ENVOYER</button>
                     </div>    
                 </div>
-            </form>
+            </form> -->
         </section>
     </main>
     <footer>
-        <div class="pieds">
+        <div class="pieds scroll">
             <div class="marvel">
                 <div class="final">
                     <div class="footer">
@@ -136,7 +175,20 @@
             </div>
         </div>
     </section>       
-              
+    <div id="popup" class="popup">
+        <span id="fls">FELICITATIONS TU EST FANS DES FILMS WAKANDA </span>
+        <p>VOTRE INITIATION EST <br>TERMINEE</p>
+        <a href="index.html"><button id="stop">REVENIR A L'ACCUEIL</button></a>
+        <div class="compter">
+            <div> 
+                <img src="./images/Illustrations + Logo/Enigme/figma_logo.svg" alt="">
+            </div>
+            <div>
+                <p>Comming soon...</p>
+                <p><span id="count"></span></p>
+            </div>
+        </div>
+    </div>          
    </footer>
     </footer>
     

@@ -1,0 +1,35 @@
+.coté{
+    animation: fall 1s ease-in 1s, invisible 1.3s ease;
+}
+@keyframes fall {
+    0%{
+        transform: translateY(-100%);
+    }
+    
+}
+@keyframes invisible {
+    0%{
+        opacity: 0;
+    }
+    
+}
+
+
+header, main, footer{
+    animation: fadding 1s ease-in;
+}
+@keyframes fadding {
+    0%{
+        transform: translateX(-100%);
+    }
+    
+}
+.scroll{
+    transform: translateX(-70%);
+    filter: blur(6px);
+    transition: 0.5s all ease-in;
+}
+.apparition{
+    transform: translateX(0);
+    filter: blur(0);
+}

@@ -1,0 +1,630 @@
+@import url(../styles/animation.css);
+*{
+    list-style: none;
+    text-decoration: none;
+}
+*:focus{
+    outline: none;
+}
+/* police */
+
+@font-face{
+    font-family: "h2";
+    src: url(/fonts/FontsFree-Net-BEYNO.ttf);
+}
+
+@font-face{
+    font-family: "p" ;
+    src: url(/fonts/Cantarell-Regular.ttf);
+}
+@font-face{
+    font-family: "forever";
+    src: url(/fonts/WakandaForever-Regular.ttf);
+}
+h1{
+    font: 43px "h2";
+    color: #9E91B7;
+}
+.sous-text-enigme{
+    font: 24px "h2";
+    color: #9E91B7;
+    width: 500px;
+}
+h2, .numEnigme, .menu2 a{
+    font-size: 32px;
+    font-family: "h2";
+    color: #412174;
+}
+.numEnigme span{
+    font-size: 32px;
+    font-family: "p";
+    color: #412174;
+}
+
+.barre2 a{
+    font: 24px "h2";
+    color: #9E91B7;
+}
+p,  .page a, #enonce{
+    font: 16px "p";
+    color: #FFFF;
+}
+.politique a{
+    font: 10px "p";
+    color: #FFFF;
+}
+
+.propos h4, .rs h4{
+    font: 18px "p";
+    letter-spacing: 6px;
+}
+#text-enigme{
+    margin-bottom: 10%;
+}
+.anecdote{
+    background-image: url(".../images/Illustrations + Logo/Enigme/Pantherenigme2.png");
+}
+
+@media screen and (max-width: 900px) {
+    .barre2 a{
+        font-size: 16px;
+    }  
+    .barre1 img{
+        height: 20px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    p, .page a, ul{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 18px ;
+    }
+    .politique a{
+        font-size: 8px;
+        
+    }
+    .propos h4, .rs h4{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+}
+
+/* barre de navigation */
+.coté{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 10px;
+}
+.coté1{
+    background-color: #9E91B7;
+    height: 550px;
+    width: 3px;
+}
+.réseaux img{
+    margin: 10px;
+}
+.réseaux img:hover{
+    filter: brightness(0) invert(1);
+}
+
+.coté3{
+    background-color: #9E91B7;
+    height: 380px;
+    width: 4px;
+    margin-left: 20px;
+}
+
+
+.barre{
+   display: flex;
+   justify-content: space-between;
+   padding: 5% 9% 0 9%; 
+}
+.barre1 img:hover{
+    filter: grayscale(100%) brightness(70%) sepia(50%) hue-rotate(-100deg) saturate(500%) constrat(1);
+}
+.barre2 {
+    display: flex;
+    margin-right: 3%;
+}
+.barre2 a{
+    padding: 0% 5%;
+    color: #FFFF;
+
+}
+.barre2 a:hover{
+    text-decoration: underline;
+    color: #9E91B7;   
+}
+@media screen and (max-width:650px)  {
+    .barre{
+        padding: 5% 6% 0 6%; 
+     }
+     .barre1 img{
+        height: 18px;
+    }
+    .barre2 a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:450px)  {
+    .barre{
+        padding: 5% 2% 0 2%; 
+     }
+     .barre1 img{
+        height: 15px;
+    }
+    .barre2 a{
+        font-size: 10px;
+    }
+}
+/* body */
+/* les liens */
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 155% ;
+    background-image: url("../images/Illustrations + Logo/All pages/arrière_plan.png");
+    overflow-x: hidden;
+    animation: fade-in 1s;
+} 
+.curseur{
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    pointer-events: none;
+} 
+@keyframes fade-in{
+    from{
+        transform: translateX(-10%);
+    }
+    to{
+        transform:translateX(0) ;
+    }
+}
+/* premiere section */
+.dora{
+    width: 60%;
+    padding-left: 53%;
+    padding-bottom: 15%;
+    position: relative;
+    background-image: url("../images/Illustrations + Logo/Enigme/Pantherenigme1.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 75% ;
+}
+.défi{
+    padding-top: 15%;
+}
+.para1{
+    width: 60%;
+    text-align: justify;
+    padding-left: 4%;
+}
+.titreh1{
+    padding-bottom: 15%;
+    text-align: justify;
+    width: 48%;
+}
+.image1{
+    position: absolute;
+    top: 35%;
+    left: 38%;
+}
+.img2 img{
+    width: 80%;
+}
+@media screen and (min-width: 1400px) {
+    .img2 img{
+        width: 110%;
+    }
+}
+@media screen and (max-width:1300px) {
+    .titreh1{
+        width: 100%;
+    }
+    .dora{
+        padding-left: 10%;
+        padding-top: 15%;
+        width: 120%;
+    }
+    .image1{
+        top: 45%;
+        left: 1%;
+    } 
+    .img2 img{
+        width: 110%;
+    }   
+}
+
+@media screen and (max-width:950px) {
+    .image1{
+        top: 50%;
+        left: 1%;
+    } 
+    .img2 img{
+        width: 95%;
+    }   
+}
+@media screen and (max-width:850px) {
+    .image1{
+        top: 50%;
+        left: 1%;
+    } 
+    .img2 img{
+        width: 80%;
+    }   
+}
+
+
+/* 2eme section */
+.fidele p{
+    font: 32px "forever";
+    color: #9E91B7;
+    letter-spacing: 6px;
+    padding-left: 8%;
+    padding-top: 5%;
+}
+.dechiffrer{
+    padding-left: 8%;
+    font: 24px;
+}
+.dechiffrer span,#anecdote-text span, #indice h3{
+    font: 24px "forever";
+}
+#indice h3{
+    color: rgb(6, 36, 26);
+}
+@media screen and (max-width: 950px) {
+    .fidele p{
+        font-size: 20px;
+    }
+}
+#text-enigme{
+    height: 500px;
+    margin-left: 18%;
+    display: flex;
+    gap: -8px;
+}
+#text-enigme h2{
+    text-decoration: underline;
+
+}
+.question {
+    grid-area: alpha;
+    width: 400px;
+}
+.anecdote{
+    margin: 15% 8% 7% 10%;
+    width: 50%;
+    position: relative;
+    grid-area: paragraphe;
+
+}
+#anecdote-text{
+    width: 120%;
+}
+/* image  */
+ .anecdote  img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+} 
+
+/* 3eme section */
+.source{
+    text-align: center;
+    padding-left: 48%;
+    padding-bottom: 3%;
+    width: 45%;
+}
+.lettre{
+    position: relative;
+}
+.img3{
+    position: absolute;
+    left: 42%;
+    bottom: -98%;
+}
+.img3 img{
+    width: 101%;
+}
+@media screen and (min-width: 1400px) {
+    .img3 img{
+        width: 110%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .img3 img{
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .source{ 
+        padding-left: 8% 3% 3% 8% ;
+    }
+    .source p{
+        font-size: 12px;
+    }
+    .img3{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .source{
+        width: 95%;
+        padding-left: 2%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    .source p{
+        font-size: 10px;
+    }
+    .img3{
+        width: 90%;
+        left: 3%;
+        top: -36%;
+    }
+
+
+}
+
+
+
+.form11{
+    width: 300px;
+    padding-left: 8%;
+    padding-bottom: 10%;
+}
+
+.input1 input{
+    width: 380px;
+    height: 54px;
+    text-align: left;
+    background: #FFFF;
+    border-radius: 40px 40px;
+    background-color: transparent;
+    border: 1px solid #FFFF;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    color: #FFFF;
+}
+.input2 button{
+    width: 170px;
+    height: 54px;
+    text-align: center;
+    background: #FFFF;
+    border-radius: 38px 38px;
+    background-color: none;
+    margin-top: 10%;
+}
+.input2{
+    padding-left: 39%;
+}
+.input2:hover{
+    filter: drop-shadow(0 1px 1.5rem #F2CEF2);
+}
+@media screen and (max-width: 500px) {
+    .input1 input{
+        height: 34px;
+        width: 300px;
+    }
+    .input2 button{
+        width: 120px;
+        height: 34px;
+    }    
+}
+
+
+/* foooter */
+.pieds{
+    background-image: url("/images/Illustrations + Logo/All pages/back_footer.png");
+    width: 101%;
+    padding-top: 10px;
+    height: 600px;
+}  
+.marvel{
+    display: flex;
+    margin-top: 8%;
+    height: 180px;
+    justify-content: right;
+}
+.propos{
+    display: flex;
+    width: 55%;
+}
+.rs{
+    padding-left: 15%;
+}
+.rs h4{
+    letter-spacing: 28%;
+}
+.reseau{ 
+    display: flex;
+}
+.rs1{
+    margin-right: 9%;
+}
+
+.final{
+    width: 28%;
+    height: 320px;
+    margin-left: 10%; 
+    position: relative;
+
+}
+
+.footer{
+    position: absolute;
+    left: 20%;
+    top: -2%;
+}
+.footer img{
+    width: 85%;
+}
+.logo3 img{
+    margin-top: 30%;
+    margin-left: 38%;
+}
+.final:hover{
+    transform: scale(1.1);
+}
+.politique{
+    font-size: 10px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 5%; 
+    margin-left: 15%; 
+}
+.pltq{
+    margin: 0 5px;
+    color: #F2CEF2;
+}
+.pltq li a:before{
+    content: ".";
+}
+.pieds h4{
+    color: #FFFF;
+}
+.rs1:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:1200px) and (min-width:900px) {
+    .footer img{
+        width: 110%;
+        margin-top: 10%;
+        margin-left: -25%;
+    }
+    .logo3{
+        width: 50%;
+        margin-top: 30%;
+    }
+    .politique{
+        margin-left: 26%;
+    }
+}
+@media screen and (max-width:900px) {
+    .pieds{
+       height: 500px; 
+       padding-top: -10%;
+    }
+    .marvel{
+        display: block;
+        height: 300px;
+        margin-bottom: 10%;
+    }
+    .propos{
+        margin-top: 7%;
+        justify-content: center;
+        width: 100%;
+    }
+    .propos h4{
+        font-size: 12px;
+    }
+    
+    .final{
+        height: 70%;
+        width: 55%;
+        justify-content: center;
+        margin: auto;
+    }
+    .logo3 img{
+        width: 25%;
+        justify-content: center;
+        padding-top: -8%;
+    }
+    
+    .footer img{
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .politique{
+        display: block;
+        width: 70%;
+        text-align: center;
+        justify-content: left;
+    }
+    .rs h4{
+        letter-spacing: 10%;
+    }
+    .rs1 img{
+        width: 30px;
+    }
+    .propos a{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .final{
+        height: 130px;
+    }  
+    .propos{
+        display: block;
+    }
+    .page{
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+    .rs{
+        margin-left: 5%;
+    }
+}
+.popup{
+    background: #947f94c9;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    position: absolute;
+    top: 95%;
+    left: 25%;
+    transform: scale(0.1);
+    text-align: center;
+    padding: 3em;
+    visibility: hidden;
+    transition: all 1s ease;
+    border: 1px solid rgba(128, 128, 128, 0.726);
+    z-index: 2;
+}
+.hero-img3{
+    margin-left: 29%;
+}
+.compter{
+    display: flex;
+    margin: 20% 20% 20% 40%;
+}
+.popup-ouvert {
+    transform: translate(0%,50%) scale(1.2);
+    visibility: visible;
+}
+ 
+ 
+ 
+ 
+ 
+ 
